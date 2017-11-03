@@ -42,7 +42,6 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-colorscheme railscasts        " awesome colorscheme
 set cursorline          " highlight current line
 set foldenable 
 
@@ -59,22 +58,8 @@ ab rif <% if %>
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-" set background=dark
-" colorscheme slate
 
 syntax enable
-if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=\Monospace\ 12
-    set background=dark
-    set guioptions -=m 
-    set guioptions -=T
-    set guioptions-=r  "remove right-hand scroll bar
-    set guioptions-=L  "remove left-hand scroll bar
-    "colorscheme base16-atelierheath
-    colorscheme railscasts
-  end
-end
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
